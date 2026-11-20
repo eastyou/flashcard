@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flashcard"
+version = "0.1.0"
+description = "双向记忆卡：术语,释义 CSV 生成 A4 可打印正反面卡片"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["flashcard", "memory", "education", "print", "csv", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+flashcard = "flashcard.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/flashcard"
+Source = "https://github.com/eastyou/flashcard"
+
+[tool.setuptools]
+packages = ["flashcard"]
